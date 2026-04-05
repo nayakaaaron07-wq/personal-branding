@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects | Neon Dark Preview</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        neon: '#39FF14',
+                        dark: '#050505',
+                        'dark-gray': '#121212',
+                    },
+                    fontFamily: {
+                        sans: ['Space Grotesk', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #050505; color: #e5e7eb; }
+        .neon-text { color: #39FF14; text-shadow: 0 0 5px rgba(57, 255, 20, 0.5); }
+        .neon-bg { background-color: #39FF14; box-shadow: 0 0 15px rgba(57, 255, 20, 0.6); }
+    </style>
+</head>
+<body class="antialiased font-sans">
+    <header class="bg-black/80 backdrop-blur-md sticky top-0 z-50 border-b border-white/10">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="halaman1.html" class="text-2xl font-bold neon-text tracking-tighter italic">NAYAKA.</a>
+            <div class="hidden md:flex space-x-10 uppercase text-xs font-bold tracking-widest">
+                <a href="halaman1.html" class="hover:text-neon transition-colors">Home</a>
+                <a href="about.html" class="hover:text-neon transition-colors">About</a>
+                <a href="projects.html" class="text-neon transition-colors border-b-2 border-neon pb-1">Projects</a>
+                <a href="skills.html" class="hover:text-neon transition-colors">Skills</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="py-24">
+        <section class="text-center mb-24">
+            <div class="flex items-center justify-center gap-4 mb-6 uppercase tracking-[0.4em] text-xs font-bold">
+                <div class="w-12 h-[1px] bg-neon"></div>
+                <span>Selected Works</span>
+                <div class="w-12 h-[1px] bg-neon"></div>
+            </div>
+            <h1 class="text-6xl md:text-9xl font-black mb-8 tracking-tighter italic uppercase neon-text">PORTFOLIO.</h1>
+        </section>
+
+        <div class="space-y-32 pb-32">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col lg:flex-row items-center gap-20">
+                    <div class="lg:w-1/2 w-full order-2 lg:order-1">
+                        <div class="relative group">
+                            <div class="absolute -top-4 -left-4 w-1/4 h-1/4 border-t-2 border-l-2 border-neon group-hover:scale-110 transition duration-500"></div>
+                            <div class="absolute -bottom-4 -right-4 w-1/4 h-1/4 border-b-2 border-r-2 border-neon group-hover:scale-110 transition duration-500"></div>
+                            <img src="images/projects/Prject.jpeg" alt="E-Commerce Project" class="grayscale hover:grayscale-0 transition duration-700 w-full object-cover">
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2 w-full order-1 lg:order-2">
+                        <span class="text-neon uppercase tracking-widest text-xs font-bold italic mb-4 block">01 / InforRoblox</span>
+                        <h2 class="text-5xl md:text-7xl font-black mb-8 tracking-tighter leading-tight italic uppercase">MULTI PURPOSE <br><span class="neon-text">PLATFORM.</span></h2>
+                        <p class="text-gray-400 text-lg leading-relaxed font-light mb-10">Objek yang dibuat dalam project ini adalah sebuah halaman web statis berbasis HTML dengan nama InforRoblox. Pembuatan objek dimulai dengan menentukan tujuan halaman, yaitu menyediakan informasi singkat mengenai beberapa game Roblox populer serta menyediakan tautan langsung menuju halaman game tersebut.</p>
+                        <div class="flex flex-wrap gap-4 text-xs font-bold uppercase tracking-widest text-gray-500">
+                            <span class="px-4 py-2 bg-white/5 border border-white/10">HTML</span>
+                            <span class="px-4 py-2 bg-white/5 border border-white/10">CSS</span>
+                            <span class="px-4 py-2 bg-white/5 border border-white/10">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark-gray border-t border-white/5 py-12 mt-20">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left">
+            <div>
+                <h3 class="text-2xl font-bold neon-text italic mb-2">NAYAKA.</h3>
+                <p class="text-gray-500 text-sm">Building digital experiences in the shadows.</p>
+            </div>
+            <div class="flex space-x-6 text-sm font-medium">
+                <a href="#" class="hover:text-neon transition">LinkedIn</a>
+                <a href="#" class="hover:text-neon transition">GitHub</a>
+                <a href="#" class="hover:text-neon transition">Instagram</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
